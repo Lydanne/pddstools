@@ -1,2 +1,0 @@
-"ui";
-require('./main.js')

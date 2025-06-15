@@ -1,20 +1,19 @@
 {
-  "name": "webui-autox-vite-demo",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "test",
+  "version": "1.0.0",
+  "description": "autox v6 test project",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "dev-autox": "node scrpits/dev-autox.mjs",
-    "build": "vue-tsc -b && vite build",
-    "build-autox": "node scrpits/build-autox.mjs",
-    "save-autox": "node scrpits/save-autox.mjs",
-    "preview": "vite preview"
+    "build": "npx eslint && gulp build",
+    "clean": "gulp clear",
+    "eslint": "npx eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "aiselp <aiselpk@gmail.com>",
+  "license": "ISC",
   "dependencies": {
-    "framework7": "^8.3.4",
-    "framework7-vue": "^8.3.4",
-    "vue": "^3.5.13"
+    "@types/lodash": "^4.17.7",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.3"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
@@ -26,15 +25,14 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^5.0.7",
     "@rollup/plugin-terser": "^0.4.4",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/tsconfig": "^0.7.0",
-    "archiver": "^7.0.1",
+    "@rollup/plugin-typescript": "^11.1.6",
     "autox-v6-api": "^1.0.5",
-    "axios": "^1.8.4",
+    "eslint": "^9.23.0",
     "fs-extra": "^11.2.0",
-    "inquirer": "^10.1.8",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0",
-    "vue-tsc": "^2.2.4"
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
+    "rollup": "^4.18.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0"
   }
 }

@@ -1,10 +1,15 @@
-import { createApp } from 'vue'
-import Framework7Vue from 'framework7-vue/bundle'
-import Framework7 from 'framework7/lite';
+import { mainView } from './views'
 
-import App from './App.vue'
+class Message {
+    print(...args: any[]) {
+        console.log("This is a message", ...args)
+    }
+}
+toast("hello world")
 
-Framework7.use(Framework7Vue)
 
+const message = new Message()
 
-createApp(App).mount('#app')
+message.print(1, 6, 5)
+
+ui.layout(mainView())
