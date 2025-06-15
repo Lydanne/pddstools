@@ -119,10 +119,13 @@ function main() {
     }
 
     // 退出 拼多多商家版
-    sleep(1000)
+    toastLog('退出拼多多商家版')
+    sleep(5000)
     back()
     sleep(1000)
     back()
+
+    toastLog('复制成功')
 }
 
 main()
