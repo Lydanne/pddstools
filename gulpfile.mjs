@@ -24,6 +24,7 @@ async function createRootPackageFile(cb) {
 
 async function copyFile() {
     copy('./start-ui.js', './dist/start-ui.js')
+    copy('./project.json', './dist/project.json')
 }
 
 export const build = series(
