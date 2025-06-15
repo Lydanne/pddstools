@@ -3,9 +3,9 @@ import './render'
 export function mainView() {
     return (
         <vertical>
-            <text text="一段文本"></text>
-            <button>按钮1</button>
-            <button>按钮2</button>
+            <text text="请输入商品 id:"></text>
+            <input id="input" text="1234567890"></input>
+            <button id="button">查询</button>
         </vertical>
     )
 }
