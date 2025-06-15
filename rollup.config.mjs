@@ -34,6 +34,6 @@ export default {
             extensions: ['.js', '.ts'],
             exclude: 'node_modules/**', // 排除 node_modules 目录
             presets: ['@babel/preset-env'] // 使用 Babel 的 env 预设
-        }), terser(),
+        }), //terser(),
     ],
 }
